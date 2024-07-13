@@ -1,0 +1,18 @@
+inherit_from: configs/Synthetic/synthetic.yaml
+mapping:
+  bound: [[-5.7, 3.8],[-0.2, 3.3],[-6.6, 3.6]]
+  marching_cubes_bound: [[-5.7, 3.8],[-0.2, 3.3],[-6.6, 3.6]]
+  
+
+data:
+  datadir: ./data/Synthetic/complete_kitchen
+  output: outputs/Synthetic_feature/ck
+  trainskip: 1
+  exp_name: demo
+  ds_start: 0
+  ds_interval: 1  # if run adaptive interval, ds_interval must be 1 !!!
+  run_interval: 10
+
+cam:
+  near: 0
+  far: 8

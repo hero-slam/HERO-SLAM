@@ -1,0 +1,17 @@
+inherit_from: configs/Synthetic/synthetic.yaml
+mapping:
+  bound: [[-2.4, 2.],[-0.6, 2.9],[-1.8, 3.1]]
+  marching_cubes_bound: [[-2.4, 2.],[-0.6, 2.9],[-1.8, 3.1]]
+
+data:
+  datadir: ./data/Synthetic/breakfast_room
+  output: outputs/Synthetic_feature/br
+  trainskip: 1
+  exp_name: demo
+  ds_start: 0
+  ds_interval: 1  # if run adaptive interval, ds_interval must be 1 !!!
+  run_interval: 10
+
+cam:
+  near: 0
+  far: 5

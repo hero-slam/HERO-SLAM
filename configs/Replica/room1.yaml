@@ -1,0 +1,13 @@
+inherit_from: configs/Replica/replica.yaml
+mapping:
+  bound: [[-5.6,1.4],[-3.2,2.8],[-1.6,1.8]]
+  marching_cubes_bound: [[-5.6,1.4],[-3.2,2.8],[-1.6,1.8]]
+
+data:
+  datadir: ./data/Replica/room1
+  trainskip: 1
+  output: outputs/Replica_feature/room1
+  exp_name: demo
+  ds_start: 0
+  ds_interval: 1  # if run adaptive interval, ds_interval must be 1 !!!
+  run_interval: 5

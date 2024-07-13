@@ -1,0 +1,18 @@
+inherit_from: configs/Synthetic/synthetic.yaml
+mapping:
+  bound: [[-2.6, 3.2],[-0.4, 3.6],[0.5, 8.3]]
+  marching_cubes_bound: [[-2.6, 3.2],[-0.4, 3.6],[0.5, 8.3]]
+  
+
+data:
+  datadir: ./data/Synthetic/whiteroom
+  output: outputs/Synthetic_feature/wr
+  trainskip: 1
+  exp_name: demo
+  ds_start: 0
+  ds_interval: 1  # if run adaptive interval, ds_interval must be 1 !!!
+  run_interval: 10
+
+cam:
+  near: 0
+  far: 8

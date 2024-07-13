@@ -1,0 +1,14 @@
+inherit_from: configs/Synthetic/synthetic.yaml
+mapping:
+  bound: [[-1.5, 2.2],[-0.3, 2.2],[-2.3, 1.9]]
+  marching_cubes_bound: [[-1.5, 2.2],[-0.3, 2.2],[-2.3, 1.9]]
+  
+
+data:
+  datadir: ./data/Synthetic/morning_apartment
+  output: outputs/Synthetic_feature/ma
+  trainskip: 1
+  exp_name: demo
+  ds_start: 0
+  ds_interval: 1  # if run adaptive interval, ds_interval must be 1 !!!
+  run_interval: 10

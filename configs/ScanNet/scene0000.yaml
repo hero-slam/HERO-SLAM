@@ -1,0 +1,16 @@
+inherit_from: configs/ScanNet/scannet.yaml
+mapping:
+  bound: [[-0.1,8.6],[-0.1,8.9],[-0.3,3.3]]
+  marching_cubes_bound: [[-0.1,8.6],[-0.1,8.9],[-0.3,3.3]]
+
+grid:
+  hash_size: 16 # 1.59M
+  
+data:
+  datadir: ./data/scannet/scene0000_00
+  output: outputs/ScanNet_feature/scene0000_00
+  trainskip: 1
+  exp_name: demo
+  ds_start: 0
+  ds_interval: 1  # if run adaptive interval, ds_interval must be 1 !!!
+  run_interval: 5
